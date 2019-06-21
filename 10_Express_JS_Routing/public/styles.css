@@ -1,0 +1,24 @@
+body{
+    font-family: Arial,sans-serif;
+    background-color: lightgreen;
+    text-align: center;
+}
+h1{
+    font-size: 35px;
+}
+p{
+    font-size: 20px;
+}
+nav{
+    background-color: black;
+    padding: 5px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: inline-block;
+}
+nav a:hover{
+    background-color: coral;
+}
