@@ -1,0 +1,29 @@
+EXPRESS GENERATOR:
+========================
+
+npm install express-generator -g
+
+
+express --view=ejs <project_name>
+
+express --view =ejs 13_Express-Template_Enginee_Ejs
+node app.js
+node bin/www
+
+npm start---->npmscript
+
+
+
+modification for files:13 th file
+-----------------------------------------------------
+1.package json--->change to nod e'nademon'
+2.change all 'var'===>'const'in four js files
+3.change static files path in main app.js
+
+Bootstrap---->ejs
+
+
+
+ 
+
+
