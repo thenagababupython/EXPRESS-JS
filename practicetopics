@@ -23,6 +23,12 @@ modification for files:13 th file
 Bootstrap---->ejs
 
 
+PUG:
+==================================================================
+express --view=pug 14_Express-Template-engine-pug
+
+
+
 
  
 
