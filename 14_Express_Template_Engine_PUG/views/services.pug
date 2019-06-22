@@ -1,0 +1,79 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='../public/bootstrap/css/font-awesome-5.8.1.css')
+    link(rel='stylesheet', href='../public/bootstrap/css/bootstrap.css')
+    link(rel='stylesheet', href='../public/bootstrap/css/mdb.css')
+    link(rel='stylesheet', href='../public/bootstrap/css/style.css')
+    title Express PUG
+  body
+    // Nav bar
+    nav.navbar.navbar-expand-md.navbar-dark.bg-primary
+      a.navbar-brand(href='/') Express PUG
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarCollapse.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item.px-2
+            a.nav-link(href='/')
+              i.fa.fa-home
+              |  Home
+          li.nav-item.px-2
+            a.nav-link(href='/about')
+              i.fa.fa-id-card
+              |  About Us
+          li.nav-item.px-2
+            a.nav-link(href='/profile')
+              i.fa.fa-user-circle
+              |  Profile
+          li.nav-item.px-2.active
+            a.nav-link(href='/services')
+              i.fa.fa-cog
+              |  Services
+          li.nav-item.px-2
+            a.nav-link(href='/contact')
+              i.fa.fa-envelope
+              |  Contact Us
+    // Main Content Section
+    section
+      .jumbotron
+        h1.display-4.text-primary Welcome to Our Sevices
+        p.lead
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam assumenda blanditiis dicta, dignissimos dolor ducimus eaque eius eligendi eos error et excepturi facilis hic id impedit incidunt inventore ipsam iusto laborum laudantium libero magnam minus natus perferendis possimus provident quaerat quam quas quibusdam recusandae repudiandae sed sit tempora voluptatibus voluptatum!
+        p.lead
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam assumenda blanditiis dicta, dignissimos dolor ducimus eaque eius eligendi eos error et excepturi facilis hic id impedit incidunt inventore ipsam iusto laborum laudantium libero magnam minus natus perferendis possimus provident quaerat quam quas quibusdam recusandae repudiandae sed sit tempora voluptatibus voluptatum!
+        // Feedback Table
+        table.table.table-hover.text-center
+          thead.bg-primary.text-white.text-uppercase
+            tr
+              th FeedBack ID
+              th Person Name
+              th Email
+              th Subject
+          tbody
+            each feedback in feedbackArray
+              tr
+                td 100
+                td  #{feedback.username}
+                td  #{feedback.email}
+                td  #{feedback.subject}
+        hr.my-4
+        p
+          | It uses utility classes for typography and spacing to space content out within the larger container.
+        a.btn.btn-primary.btn-lg(href='#', role='button') Learn more
+    // Main footer
+    footer.p-3.bg-primary.text-white.text-center
+      .container
+        .row
+          .col
+            h3 Copyright © 2019 , Express PUG
+            h6 All Rights Reserved
+            h6 Developed & Maintained by Express PUG
+    // Scripts
+    script(src='../public/bootstrap/js/jquery-3.3.1.min.js')
+    script(src='../public/bootstrap/js/popper.min.js')
+    script(src='../public/bootstrap/js/bootstrap.js')
+    script(src='../public/bootstrap/js/mdb.js')

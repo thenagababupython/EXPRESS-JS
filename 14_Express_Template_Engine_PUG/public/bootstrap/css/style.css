@@ -1,0 +1,16 @@
+/* Your custom styles */
+.carousel .carousel-indicators li {
+    height: 5px;
+    width: 30px;
+    border-radius: 0% !important;
+    cursor: pointer;
+}
+.bg-primary , .btn-primary{
+    background: linear-gradient(45deg,black,blue) !important;
+}
+.text-primary{
+    color: darkblue !important;
+}
+.table{
+    box-shadow: 0 0 10px darkblue !important;
+}
